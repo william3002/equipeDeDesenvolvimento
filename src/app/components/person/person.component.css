@@ -1,0 +1,15 @@
+#container{
+  width: 350px;
+  border-radius: 200px 200px 20px 20px;
+  box-shadow: 5px 5px 13px -6px black;
+}
+
+#box-image{
+  max-width: 100%;
+  background-image: url('../../../../public/images/Background_decor.svg');
+  background-repeat: no-repeat;
+}
+
+h5{
+  color: rgba(255, 255, 255, 0.804);
+}

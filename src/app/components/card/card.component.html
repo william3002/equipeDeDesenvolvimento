@@ -1,0 +1,17 @@
+<div id="card" class="d-flex flex-column justify-content-end text-white"
+[style.background-color]="cardColor">
+
+  <div id="cardPhoto">
+    <img src="{{cardPhoto}}" alt="">
+  </div>
+
+  <div id="cardTitle" class="ms-3">
+    <h4>{{cardTitle}}</h4>
+  </div>
+
+  <div id="cardDescription" class="ms-3 mb-1">
+    <p>{{cardDescription}}</p>
+    <button [routerLink]="['content', id]" routerLinkActive="router-link-active"  class="btn btn-primary">Me veja</button>
+  </div>
+
+</div>

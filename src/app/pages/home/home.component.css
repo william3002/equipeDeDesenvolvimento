@@ -1,0 +1,28 @@
+#container{
+  background-image: url('../../../../public/images/Background_decor.svg');
+  background-repeat: no-repeat;
+  background-color: #F3F4F6;
+  margin: auto;
+  width: 550px;
+}
+
+main{
+  width: 500px;
+}
+
+app-card{
+  padding: 0;
+}
+
+#box{
+  width: 275px;
+  height: 250px;
+}
+
+
+#box>p{
+  margin-top: 200px;
+  margin-left: 20px;
+}
+
+
