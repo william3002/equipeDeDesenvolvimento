@@ -15,7 +15,10 @@ export class ContentComponent {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.paramMap.get('id');  // Obtenha o ID da rota
+    // this.id = this.route.snapshot.paramMap.get('id');  // Obtenha o ID da rota
+    this.route.paramMap.subscribe(value => this.id = (value.get("id")))
     console.log(this.id); // Use o ID para carregar dados específicos, se necessário
   }
+
+  
 }

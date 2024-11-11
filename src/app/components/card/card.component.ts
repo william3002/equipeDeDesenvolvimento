@@ -24,6 +24,6 @@ export class CardComponent {
   cardColor: string = '';
 
   @Input()
-  id: string = ""
+  id: string = "0"
 
 }
