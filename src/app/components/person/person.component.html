@@ -1,15 +1,17 @@
-<div id="container" class="mx-auto my-5  text-white" [style.background-color]="personColorFundo">
-  <div id="box-image" class="rounded-top-pill text-center" [style.background-color]="personColorFundoImg">
-  <img class="" [src]="personPhoto" alt="">
-  </div>
-  <div class="p-4">
-    <h1 id="personTitle" class="text-center">{{personTitle}}</h1>
-    <h5 id="personSubTitle" class="text-center">{{personSubTitle}}</h5>
-    <hr>
-    <p id="personDescription">{{personDescription}}</p>
-
-    <div>
-      <a [routerLink]="['']" routerLinkActive="router-link-active"  class="text-decoration-none text-white">Voltar</a>
+<div id="container">
+  <div class="mx-auto text-white rounded-top-pill" [style.background-color]="personColorFundo">
+    <div id="box-image" class="rounded-top-pill" [style.background-color]="personColorFundoImg">
+      <img [src]="personPhoto" alt="">
+    </div>
+    <div class="p-4">
+      <h1 id="personTitle" class="text-center">{{personTitle}}</h1>
+      <h5 id="personSubTitle" class="text-center">{{personSubTitle}}</h5>
+      <hr>
+      <p id="personDescription">{{personDescription}}</p>
+      <div>
+        <a [routerLink]="['']" routerLinkActive="router-link-active"
+          class="btn text-white border border-1 border-white">Voltar</a>
+      </div>
     </div>
   </div>
 </div>

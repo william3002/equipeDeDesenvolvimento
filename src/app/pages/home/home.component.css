@@ -3,11 +3,12 @@
   background-repeat: no-repeat;
   background-color: #F3F4F6;
   margin: auto;
-  width: 550px;
+  margin-top: 100px;
+  width: 1150px;
 }
 
-main{
-  width: 500px;
+#pp{
+  width: 550px;
 }
 
 app-card{
@@ -25,4 +26,13 @@ app-card{
   margin-left: 20px;
 }
 
+.col-3{
+  width: 275px;
+}
 
+a{
+  position: absolute;
+  top: 550px;
+  left: 1030px;
+  cursor: pointer;
+}

@@ -6,10 +6,10 @@
 
 }
 
-img{
+#cardPhoto>img{
   position: relative;
   width: 250px;
-  top: 74px;
+  top: 76px;
 }
 
 h4{

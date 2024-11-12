@@ -1,24 +1,39 @@
 import { Component } from '@angular/core';
 import { PersonComponent } from "../../components/person/person.component";
 import { ActivatedRoute } from '@angular/router';
+import { membersInterface } from '../../interface/members';
+import person from '../../person.json'
+import { CardComponent } from "../../components/card/card.component";
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [PersonComponent],
+  imports: [PersonComponent, CardComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })
 export class ContentComponent {
-  private id: string | null = null;
+  private id: number | null = null;
+  member?: membersInterface;
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    // this.id = this.route.snapshot.paramMap.get('id');  // Obtenha o ID da rota
-    this.route.paramMap.subscribe(value => this.id = (value.get("id")))
-    console.log(this.id); // Use o ID para carregar dados específicos, se necessário
+    // this.route.paramMap.subscribe(value => this.id = (value.get("id")))
+    this.getMember()
+
   }
 
-  
+  getMember(){
+    const id = Number(this.route.snapshot.paramMap.get('id'))
+    console.log(id);
+    person.forEach((member)=>{
+      if(member.id === id){
+        this.member = member
+      }
+    })
+    console.log(this.member)
+  }
+
+
 }
