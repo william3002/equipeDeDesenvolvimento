@@ -4,15 +4,11 @@
   background-color: #F3F4F6;
   margin: auto;
   margin-top: 100px;
-  width: 1150px;
+  width: 1114px;
 }
 
 #pp{
-  width: 550px;
-}
-
-app-card{
-  padding: 0;
+  width: 502px;
 }
 
 #box{
@@ -33,6 +29,6 @@ app-card{
 a{
   position: absolute;
   top: 550px;
-  left: 1030px;
+  left: 1050px;
   cursor: pointer;
 }

@@ -1,16 +1,16 @@
-<div id="container">
-  <div class="mx-auto text-white rounded-top-pill" [style.background-color]="personColorFundo">
-    <div id="box-image" class="rounded-top-pill" [style.background-color]="personColorFundoImg">
+<div id="container" class="d-flex justify-content-center ">
+  <div class="d-flex rounded-3" [style.background-color]="personColorFundo">
+    <div id="box-image" class="rounded-start-3" [style.background-color]="personColorFundoImg">
       <img [src]="personPhoto" alt="">
     </div>
     <div class="p-4">
-      <h1 id="personTitle" class="text-center">{{personTitle}}</h1>
-      <h5 id="personSubTitle" class="text-center">{{personSubTitle}}</h5>
-      <hr>
-      <p id="personDescription">{{personDescription}}</p>
+      <h1 id="personTitle" class="text-white">{{personTitle}}</h1>
+      <h5 id="personSubTitle" class="text-white opacity-75">{{personSubTitle}}</h5>
+      <hr class="text-white">
+      <p id="personDescription" class="text-white">{{personDescription}}</p>
       <div>
         <a [routerLink]="['']" routerLinkActive="router-link-active"
-          class="btn text-white border border-1 border-white">Voltar</a>
+          class="btn w-25 text-white border border-2 border-white">Voltar</a>
       </div>
     </div>
   </div>
